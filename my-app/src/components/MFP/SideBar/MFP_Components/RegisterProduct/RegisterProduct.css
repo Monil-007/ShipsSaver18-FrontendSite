@@ -1,0 +1,380 @@
+.getDetails {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    background-color: #f0f0f0;
+}
+
+.getDetails h1 {
+    margin-top: 8vh;
+    margin-bottom: 15vh;
+    text-align: center;
+    animation: bounceAnimation 2s;
+
+}
+
+.profile-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+@keyframes bounceAnimation {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    20% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-50px);
+    }
+
+    60% {
+        transform: translateY(0);
+    }
+
+    80% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    /* gap: 1rem; */
+}
+
+.form-row {
+    margin-left: 8vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 8vh;
+}
+
+.form-row-2 {
+    margin-left: 16vh;
+    display: flex;
+    flex-direction: row;
+    /*     
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    gap: 8rem;
+    justify-content: center;
+    margin-bottom: 8vh;
+}
+
+@media (max-width: 768px) {
+
+
+    .form-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-row-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.form-item {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+/* Information tooltip styles */
+.info-tooltip {
+    position: relative;
+    display: inline-block;
+    animation: slide-in-left 2.9s forwards;
+}
+
+.info-icon {
+    font-size: 14px;
+    color: #999;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.info-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.info-tooltip:hover .info-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Error message styles */
+.err {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.field-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.err {
+    color: red;
+}
+
+.input-item-left {
+
+    font-size: 18px;
+    transform: translateX(-70px);
+    animation: slide-in-left 2.9s forwards;
+}
+
+@keyframes slide-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-70px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.input-item-left-field {
+    /* Set the desired width and height */
+    width: 300px;
+    height: 30px;
+
+    /* Add padding and border */
+    padding: 10px;
+    border: 1px solid #ccc;
+
+    /* Customize the font */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+
+    /* Add some visual effects */
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.8s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.input-item-left-field:focus {
+    /* Change the border and box shadow when the input is focused */
+    border-color: #4285f4;
+    box-shadow: 0 2px 4px rgba(66, 133, 244, 0.3);
+}
+
+/* If you want to style the placeholder text */
+.input-item-left-field::placeholder {
+    color: #999;
+}
+
+/* If you want to style the value text */
+.input-item-left-field[type="text"] {
+    /* Customize the text alignment and spacing */
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+
+.input-item-right {
+
+    font-size: 18px;
+    transform: translateX(-70px);
+    animation: slide-in-right 2.9s forwards;
+}
+
+@keyframes slide-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-70px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.input-item-right-field {
+    /* Set the desired width and height */
+    width: 300px;
+    height: 30px;
+
+    /* Add padding and border */
+    padding: 10px;
+    border: 1px solid #ccc;
+
+    /* Customize the font */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+
+    /* Add some visual effects */
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.input-item-right-field:focus {
+    /* Change the border and box shadow when the input is focused */
+    border-color: #4285f4;
+    box-shadow: 0 2px 4px rgba(66, 133, 244, 0.3);
+}
+
+/* If you want to style the placeholder text */
+.input-item-right-field::placeholder {
+    color: #999;
+}
+
+/* If you want to style the value text */
+.input-item-right-field[type="text"] {
+    /* Customize the text alignment and spacing */
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.dd {
+    height: 35px;
+}
+
+.reg_button {
+    margin-top: -5em;
+
+    width: 20%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: lightgreen;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: black;
+    box-shadow: 0dvh;
+    cursor: pointer;
+    height: 5vh;
+}
+
+.reg_button:hover {
+    transform: translate(0, -7px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.9);
+
+}
+
+
+/* ------------------ RK form---------------*/
+
+
+/* .input-form {
+    max-width: 600px;
+   
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-bottom: 10px;
+}
+
+.label {
+    flex-basis: 30%;
+  
+    text-align: left;
+}
+
+.input-wrapper {
+    flex-basis: 70%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+Animation */
+/* .form-row input,
+.form-row .label {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Layout */
+/*
+@media screen and (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-wrapper {
+        flex-basis: 100%;
+    }
+
+    .form-row .label {
+        flex-basis: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+} */
