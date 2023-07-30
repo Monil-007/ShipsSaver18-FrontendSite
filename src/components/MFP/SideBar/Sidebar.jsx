@@ -1,17 +1,17 @@
 import { NavLink } from "react-router-dom";
 import { FaBars, FaHome, FaLock, FaMoneyBill, FaUser } from "react-icons/fa";
-import { MdMessage } from "react-icons/md";
+//import { MdMessage } from "react-icons/md";
 import { BiAnalyse, BiSearch } from "react-icons/bi";
-import { BiCog } from "react-icons/bi";
-import { AiFillHeart, AiTwotoneFileExclamation } from "react-icons/ai";
-import { BsCartCheck } from "react-icons/bs";
+//import { BiCog } from "react-icons/bi";
+//import { AiFillHeart, AiTwotoneFileExclamation } from "react-icons/ai";
+//import { BsCartCheck } from "react-icons/bs";
 import { useState } from "react";
 import { FaCashRegister, FaSignOutAlt } from "react-icons/fa";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./Sidebarmenu";
 import './Sidebar.css';
 import { useEffect } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const routes = [
