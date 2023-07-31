@@ -35,16 +35,7 @@ const routes = [
         name: "Find nearby ShipSavers",
         icon: <FaUser />,
     },
-    // {
-    //     path: "/users",
-    //     name: "Users",
-    //     icon: <FaUser />,
-    // },
-    // {
-    //     path: "/messages",
-    //     name: "Messages",
-    //     icon: <MdMessage />,
-    // },
+
     {
         path: "/closeOrder",
         name: "Close Order",
