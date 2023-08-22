@@ -16,6 +16,7 @@
     text-decoration: none;
     list-style: none;
 
+    
 }
 
 .login {
@@ -56,7 +57,7 @@ li {
 .login {
     margin-right: 3em;
     padding: 10px 20px;
-    background-color: orange;
+    /* background-color: orange; */
     border-radius: 5px;
 }
 
