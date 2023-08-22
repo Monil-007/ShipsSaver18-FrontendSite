@@ -5,6 +5,7 @@ import './Login.css'
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import AuthBG from '../../../assets/icons/AuthBG.jpg';
 //import Signup from '../Signup/Signup';
 
 const Login = () => {

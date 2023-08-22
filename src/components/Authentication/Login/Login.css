@@ -2,9 +2,21 @@
     margin-top: 3vh;
     width: 100%;
     height: 120%;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+
+    background-image: url('../../../assets/icons/AuthBG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* .authPage {
+
+  } */
 .login {
     height: calc(100vh - 50px);
     display: flex;
