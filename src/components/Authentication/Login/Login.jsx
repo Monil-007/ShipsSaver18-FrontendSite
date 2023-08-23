@@ -6,6 +6,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AuthBG from '../../../assets/icons/AuthBG.jpg';
+import ShipSaver18Logo from '../../../assets/icons/ShipSaver18Logo.png'
 //import Signup from '../Signup/Signup';
 
 const Login = () => {
@@ -56,7 +57,7 @@ const Login = () => {
     return (
         <div className="authPage">
             <div className="subauth">
-                <div className="logoImg"></div>
+                <img className="logoImg" src={ShipSaver18Logo}></img>
                 <div className="TitleLogo">ShipSaver18RK</div>
             </div>
 

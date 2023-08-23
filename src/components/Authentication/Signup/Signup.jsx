@@ -5,6 +5,8 @@ import Google from '../../../assets/icons/google.png';
 import Github from "../../../assets/icons/github.png";
 import './Signup.css';
 import { useNavigate } from 'react-router-dom';
+import ShipSaver18Logo from '../../../assets/icons/ShipSaver18Logo.png'
+
 
 const Signup = () => {
 
@@ -48,6 +50,10 @@ const Signup = () => {
     }
     return (
         <div className="authPage">
+            <div className="subauth">
+                <img className="logoImg" src={ShipSaver18Logo}></img>
+                <div className="TitleLogo">ShipSaver18RK</div>
+            </div>
             <div className="signup">
                 <h1 className="signupTitle">Choose a Signup Method</h1>
                 <div className="wrapper">

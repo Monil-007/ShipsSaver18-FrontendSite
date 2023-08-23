@@ -15,19 +15,26 @@
     overflow-y: hidden;
 }
 
-.subAuth {
+.subauth {
     display: flex;
-    flex-direction: column;
+    gap: 20px;
+    /* justify-content: flex-start; */
 }
 
-logoI {
-    margin-left: 0%;
-    margin-top: 2%;
-    ;
+.logoImg {
+
+    display: inline-block;
+    /* Ensures the image doesn't break the line */
+    max-width: 100px;
+    /* Adjust to your preferred maximum width */
+    height: auto;
+    /* Automatically adjust height to maintain aspect ratio */
+    padding: 5px;
 }
 
 .TitleLogo {
-    font-size: 1.9rem;
+    margin-top: 3px;
+    font-size: 2rem;
     color: chocolate;
     margin-right: 0%;
 }
@@ -46,22 +53,23 @@ logoI {
     justify-content: center;
     /* background-color: whitesmoke;
  */
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease;*/
 }
 
 .loginTitle {
-    position: static;
+    position: fixed;
     top: 140px;
     color: papayawhip;
 }
 
 
-.login:hover {
+/* .login:hover {
     background-color: rgba(0, 0, 0, 0.5);
-    /* Apply a semi-transparent background color */
-    backdrop-filter: blur(10px);
+ 
+backdrop-filter: blur(10px);
 }
 
+*/
 .wrapper {
     width: 90%;
     height: 75%;

@@ -2,7 +2,39 @@
     /* margin-top: 3vh; */
     width: 100%;
     height: 120%;
-    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subauth {
+    display: flex;
+    gap: 20px;
+    /* justify-content: flex-start; */
+}
+
+.logoImg {
+
+    display: inline-block;
+    /* Ensures the image doesn't break the line */
+    max-width: 100px;
+    /* Adjust to your preferred maximum width */
+    height: auto;
+    /* Automatically adjust height to maintain aspect ratio */
+    padding: 5px;
+}
+
+/* logoI {
+    margin-left: 0%;
+    margin-top: 2%;
+    ;
+} */
+
+.TitleLogo {
+    margin-top: 3px;
+    font-size: 2rem;
+    color: chocolate;
+    margin-right: 0%;
 }
 
 .signup {
@@ -11,18 +43,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     transition: background-color 0.3s ease;
 }
 
+/* 
 .signup:hover {
     background-color: rgba(0, 0, 0, 0.5);
-    /* Apply a semi-transparent background color */
-    backdrop-filter: blur(10px);
+   
+backdrop-filter: blur(10px);
 }
 
-
-
+*/
 .wrapper {
     width: 90%;
     height: 75%;
