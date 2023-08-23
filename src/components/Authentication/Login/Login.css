@@ -1,8 +1,6 @@
 .authPage {
-    /* margin-top: 3vh; */
     width: 100%;
     height: 120%;
-    /* background-color: whitesmoke; */
     background-image: url('../../../assets/icons/AuthBGFlipped.jpg');
     background-size: cover;
     background-position: center;
@@ -10,38 +8,41 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    overflow-y: hidden;
+
 }
 
-.subauth {
+/* .subauth {
     display: flex;
     gap: 20px;
-    /* justify-content: flex-start; */
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.logoWrapper {
+    display: flex;
+    align-items: flex-start;
 }
 
 .logoImg {
-
-    display: inline-block;
-    /* Ensures the image doesn't break the line */
     max-width: 100px;
-    /* Adjust to your preferred maximum width */
     height: auto;
-    /* Automatically adjust height to maintain aspect ratio */
     padding: 5px;
+    margin-left: -40rem;
+}
+
+.titleWrapper {
+    display: flex;
+    align-items: center;
 }
 
 .TitleLogo {
-    margin-top: 3px;
+    margin-top: -7rem;
     font-size: 2rem;
     color: chocolate;
-    margin-right: 0%;
+    text-align: center;
 }
 
-/* .authPage {
-
-  } */
 .login {
     height: calc(100vh - 50px);
     width: 40%;
@@ -119,14 +120,13 @@ backdrop-filter: blur(10px);
     border-radius: 50%;
     padding: 10px;
     color: gray;
-    /* background-color: white; */
+
     font-weight: bold;
 }
 
 .line {
     width: 0.5px;
     height: 70%;
-    /* background-color: lightgray; */
     position: absolute;
     top: 0;
     bottom: 0;

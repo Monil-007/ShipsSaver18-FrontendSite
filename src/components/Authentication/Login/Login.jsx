@@ -56,10 +56,19 @@ const Login = () => {
     }
     return (
         <div className="authPage">
-            <div className="subauth">
+            {/* <div className="subauth">
                 <img className="logoImg" src={ShipSaver18Logo}></img>
                 <div className="TitleLogo">ShipSaver18RK</div>
+            </div> */}
+            <div className="subauth">
+                <div className="logoWrapper">
+                    <img className="logoImg" src={ShipSaver18Logo} alt="Logo" />
+                </div>
+                <div className="titleWrapper">
+                    <div className="TitleLogo">ShipSaver18RK</div>
+                </div>
             </div>
+
 
             <div className="login">
                 <h1 className="loginTitle">Choose a Login Method</h1>
