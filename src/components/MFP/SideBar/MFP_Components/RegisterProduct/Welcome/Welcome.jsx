@@ -3,6 +3,7 @@ import SideBar from '../../../Sidebar.jsx';
 import './Welcome.css';
 import Carousel from '../../../../../Carousel/Carousel.jsx';
 
+
 const Welcome = () => {
 
     const [showTypingText, setShowTypingText] = useState(false);
@@ -40,6 +41,7 @@ const Welcome = () => {
                     </div>
                     <Carousel />
                 </div>
+
             </div>
         </div>
     )

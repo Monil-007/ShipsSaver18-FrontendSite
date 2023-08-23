@@ -41,6 +41,11 @@ const routes = [
         name: "Close Order",
         icon: <BiAnalyse />,
     },
+    {
+        path: "/contactUs",
+        name: "Get in Touch",
+        icon: <BiAnalyse />,
+    },
     // {
     //     path: "/file-manager",
     //     name: "File Manager",

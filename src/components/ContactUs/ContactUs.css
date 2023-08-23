@@ -1,0 +1,9 @@
+.socRow {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.socials {
+    color: red;
+}

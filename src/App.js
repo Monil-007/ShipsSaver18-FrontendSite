@@ -24,6 +24,7 @@ import Logout from "./components/MFP/SideBar/MFP_Components/RegisterProduct/Logo
 import Store from './store.js';
 import Welcome from "./components/MFP/SideBar/MFP_Components/RegisterProduct/Welcome/Welcome";
 import CloseOrder from "./components/MFP/SideBar/MFP_Components/RegisterProduct/CloseOrder/CloseOrder";
+import ContactUs from "./components/ContactUs/ContactUs";
 // import 'tailwindcss/tailwind.css';
 
 function App() {
@@ -74,6 +75,7 @@ function App() {
           <Route exact path='/find_sim_cust' element={<FindSimilarCustomers user={user} />} />
           <Route exact path='/logout' element={<Logout />} />
           <Route exact path='/closeOrder' element={<CloseOrder />} />
+          <Route exact path='/contactUs' element={<ContactUs />} />
         </Routes>
 
       </Router>

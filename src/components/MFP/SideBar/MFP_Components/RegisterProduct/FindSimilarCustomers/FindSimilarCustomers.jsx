@@ -9,6 +9,7 @@ import SearchingImageAnimation from '../../../../../../../src/assets/icons/Searc
 import dummyImage from '../../../../../../assets/icons/dummyImage.png'
 
 
+
 const useStyles = makeStyles({
     card: {
         position: 'relative',
@@ -172,6 +173,7 @@ const FindSimilarCustomers = ({ formData, user }) => {
                     </div>
                 </div>
             </div>
+
         </div>
     )
 }
