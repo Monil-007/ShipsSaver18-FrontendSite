@@ -25,6 +25,7 @@ import Store from './store.js';
 import Welcome from "./components/MFP/SideBar/MFP_Components/RegisterProduct/Welcome/Welcome";
 import CloseOrder from "./components/MFP/SideBar/MFP_Components/RegisterProduct/CloseOrder/CloseOrder";
 import ContactUs from "./components/ContactUs/ContactUs";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 // import 'tailwindcss/tailwind.css';
 
 function App() {

@@ -58,8 +58,9 @@
 }
 
 .loginTitle {
+    margin-right: 4rem;
     position: fixed;
-    top: 140px;
+    top: 13rem;
     color: papayawhip;
 }
 

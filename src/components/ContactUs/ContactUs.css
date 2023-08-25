@@ -7,3 +7,17 @@
 .socials {
     color: red;
 }
+
+.contactDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Content {
+    font-size: 20px;
+}
+
+.cForm {
+    width: 150%;
+}
