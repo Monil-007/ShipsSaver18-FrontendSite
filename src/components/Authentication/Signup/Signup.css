@@ -239,7 +239,7 @@ input {
 }
 
 .signupTitle {
-    margin-right: 4rem;
+    margin-right: 12rem;
     position: fixed;
     top: 13rem;
     color: papayawhip;
@@ -279,6 +279,7 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .center {

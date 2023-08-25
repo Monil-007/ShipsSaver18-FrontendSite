@@ -65,15 +65,11 @@ const Signup = () => {
             <div className="signup">
                 <h1 className="signupTitle">Choose a Signup Method</h1>
                 <div className="wrapper">
-                    <div className="left">
+                    {/* <div className="left">
                         <div className="signupButton google" onClick={google}>
                             <img src={Google} alt="" className="icon" />
                             Google
                         </div>
-                        {/* <div className="signupButton facebook" onClick={facebook}>
-                        <img src={Facebook} alt="" className="icon" />
-                        Facebook
-                    </div> */}
                         <div className="signupButton github" onClick={github}>
                             <img src={Github} alt="" className="icon" />
                             Github
@@ -82,7 +78,7 @@ const Signup = () => {
                     <div className="center">
                         <div className="line" />
                         <div className="or">OR</div>
-                    </div>
+                    </div> */}
                     <div className="right">
                         <input type="text" placeholder="Username" value={username} onChange={handleUsernameChange} />
                         <input type="password" placeholder="Password" value={password} onChange={handlePasswordChange} />

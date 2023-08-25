@@ -58,7 +58,7 @@
 }
 
 .loginTitle {
-    margin-right: 4rem;
+    margin-right: 12rem;
     position: fixed;
     top: 13rem;
     color: papayawhip;
@@ -75,9 +75,9 @@ backdrop-filter: blur(10px);
 .wrapper {
     width: 90%;
     height: 75%;
-    -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    /* -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
     -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
-    box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1); */
     display: flex;
     align-items: center;
     border-radius: 20px;
@@ -106,6 +106,7 @@ backdrop-filter: blur(10px);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .center {
@@ -152,9 +153,9 @@ backdrop-filter: blur(10px);
 }
 
 .loginButton:hover {
-    background-color: black;
+    /* background-color: black; */
     transform: translateY(-12px);
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3); */
 }
 
 .google {
@@ -194,10 +195,10 @@ input {
 }
 
 .submit:hover {
-    background-color: black;
+    /* background-color: black; */
     color: whitesmoke;
     transform: translateY(-12px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); */
 }
 
 @media (max-width: 912px) {
