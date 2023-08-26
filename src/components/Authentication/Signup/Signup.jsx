@@ -6,13 +6,15 @@ import Github from "../../../assets/icons/github.png";
 import './Signup.css';
 import { useNavigate } from 'react-router-dom';
 import ShipSaver18Logo from '../../../assets/icons/ShipSaver18Logo.png'
-
+import { useDispatch } from 'react-redux';
+import { setUser } from '../../../Actions/formAction';
 
 const Signup = () => {
 
     const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const dispatch = useDispatch();
 
     const handleUsernameChange = (e) => {
         setUsername(e.target.value);
@@ -26,6 +28,9 @@ const Signup = () => {
         try {
             const response = await axios.post('https://shipsaver18-backend.onrender.com/authManual/manualSignup', { username, password });
             console.log(response.data.message);
+            console.log(response.data.uniqueID);
+            dispatch(setUser(response.data.uniqueID));
+            navigate('/welcome');
             // Redirect or perform other actions after successful signup
         } catch (error) {
             console.error('Error during manual signup', error);

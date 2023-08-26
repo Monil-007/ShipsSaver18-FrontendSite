@@ -12,12 +12,13 @@ const CloseOrder = () => {
     const [fg, setFg] = useState(false);
     const [yourOrders, setYourOrders] = useState([
         { id: 5, name: 'Order 1', isExtended: false },
-        // { id: 2, name: 'Order 2', isExtended: false },
-        // { id: 3, name: 'Order 3', isExtended: false },
+        { id: 2, name: 'Order 2', isExtended: false },
+        { id: 3, name: 'Order 3', isExtended: false },
     ]);
     const getYourOrders = () => {
         if (formData18.user && formData18.user.id) {
             console.log(typeof (formData18.user.id));
+            console.log(formData18.user.id);
             const userData = {
                 userID: `${formData18.user.id}`
             } // Log the updated formData
@@ -28,6 +29,7 @@ const CloseOrder = () => {
                 },
                 body: JSON.stringify(userData)
             })
+
                 .then(resp => resp.json())
                 .then((dt1) => {
                     console.log(dt1);

@@ -8,7 +8,7 @@ import DeliveryBoyAnimation from '../../../../../../../src/assets/icons/Delivery
 import SearchingImageAnimation from '../../../../../../../src/assets/icons/SearchingImageAnimation.png'
 import dummyImage from '../../../../../../assets/icons/dummyImage.png'
 
-
+import { useSelector } from 'react-redux';
 
 const useStyles = makeStyles({
     card: {
@@ -85,13 +85,16 @@ const FindSimilarCustomers = ({ formData, user }) => {
         );
     };
     const [isClicked, setIsClicked] = useState(false);
-
     const [custData, setCustData] = useState([]);
     const [loading, setLoading] = useState(false);
+    const userCred = useSelector(state => state.formData);
 
     const getCust = () => {
         try {
             const dt = JSON.stringify(formData);
+            // const formData18 = useSelector(state => state.formData);
+
+            console.log(userCred.user);
             console.log("See data:" + dt);
             fetch("https://shipsaver18-backend.onrender.com/DeliverySaverApi/rkGetSavers", {
                 method: "POST",

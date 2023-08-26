@@ -22,7 +22,6 @@ const RegisterProduct = ({ user }) => {
     const [prodlink, setProdlink] = useState('');
     const [prodprice, setProdprice] = useState('');
 
-
     const [formData, setFormData1] = useState({
         firstname: '',
         middlename: '',
@@ -54,7 +53,6 @@ const RegisterProduct = ({ user }) => {
                 .then((dt1) => { console.log(dt1); })
                 .catch(err => console.log(err));
         }
-
     }, [formData18]);
     const [errors, setErrors] = useState({});
 
@@ -72,10 +70,11 @@ const RegisterProduct = ({ user }) => {
         e.preventDefault();
         console.log("inside submit hare hare");
         console.log(uuidv4());
-        console.log(formData18.user.id);
+        //console.log(formData18.user.id);
+        const currId = uuidv4();
         const dt = {
-            userID: `${formData18.user.id}`,
-            id18: uuidv4(),
+            userID: formData18.user.id ? formData18.user.id : currId,
+            id18: currId,
             firstName: `${formData.firstname}`,
             lastName: `${formData.lastname}`,
             email: `${formData.email}`,
@@ -83,6 +82,7 @@ const RegisterProduct = ({ user }) => {
             phone: `${formData.phone}`
         }
         dispatch(setFormData(dt));
+        console.log(dt);
         //console.log(formData);
 
         await fetch(`https://shipsaver18-backend.onrender.com/DeliverySaverApi/rkRegister`, {
@@ -101,19 +101,11 @@ const RegisterProduct = ({ user }) => {
         }
     };
 
-
     const validateForm = () => {
         const errors = {};
-
         if (formData.firstname.trim() === '') {
             errors.firstname = 'First Name is required';
         }
-
-        // if (formData.middlename.trim() === '') {
-        //     errors.middlename = 'Middle Name is required';
-        // }
-
-
         if (formData.lastname.trim() === '') {
             errors.lastname = 'Last Name is required';
         }
@@ -129,7 +121,6 @@ const RegisterProduct = ({ user }) => {
         } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
             errors.email = 'Invalid email format';
         }
-
         return errors;
     };
 

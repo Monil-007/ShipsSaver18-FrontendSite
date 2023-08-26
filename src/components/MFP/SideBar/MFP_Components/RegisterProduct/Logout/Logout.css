@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid blue;
     z-index: 9999;
 }
 
@@ -67,11 +68,9 @@ button {
     align-items: center;
     justify-content: center;
     height: 30vh;
-    /* Adjust the height as needed */
     width: 80%;
     margin-top: 40vh;
     margin-bottom: -8vh;
-
     color: black;
 }
 
@@ -87,7 +86,6 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-
     .buttons {
         flex-direction: column;
         margin-top: 20px;
