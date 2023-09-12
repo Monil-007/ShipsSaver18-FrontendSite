@@ -98,7 +98,24 @@ const CloseOrder = () => {
 
 
     return (
-        <div style={{ display: 'flex' }}>
+
+
+        < div style={{ display: 'flex', background: '#4e54c8' }
+        }>
+            {/* <ul className="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul> */}
             <SideBar />
             <div className="mainWrapperCO">
                 <div className="closeHeading">
@@ -153,7 +170,9 @@ const CloseOrder = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </div >
+
+
     );
 };
 

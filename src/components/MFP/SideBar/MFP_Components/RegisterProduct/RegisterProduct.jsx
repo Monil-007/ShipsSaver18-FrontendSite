@@ -125,7 +125,10 @@ const RegisterProduct = ({ user }) => {
     };
 
     return (
+
         <div className="reg_prod" style={{ "display": "flex" }}>
+
+
             <div className="sdb">
                 <SideBar />
             </div>
@@ -271,6 +274,9 @@ const RegisterProduct = ({ user }) => {
                 </div>
             </div>
         </div >
+
+
+
 
     );
 };
